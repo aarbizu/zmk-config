@@ -19,9 +19,9 @@
 
         base {
             bindings = <
-&none  &kt Q  &kt W  &kt F    &kt P    &kt B          &kt J            &kt L        &kt U              &kt Y    &kt SEMI  &none
-&none  &kt A  &kt R  &kt S    &kt T    &kt G          &kt M            &kt N        &kt E              &kt I    &kt O     &none
-&none  &kt X  &kt C  &kt D    &kt V    &kt Z          &kt K            &kt H        &kt COMMA          &kt DOT  &kt FSLH  &none
+&none  &kp Q  &kp W  &kp F    &kp P    &kp B          &kp J            &kp L        &kp U              &kp Y    &kp SEMI  &none
+&none  &kp A  &kp R  &kp S    &kp T    &kp G          &kp M            &kp N        &kp E              &kp I    &kp O     &none
+&none  &kp X  &kp C  &kp D    &kp V    &kp Z          &kp K            &kp H        &kp COMMA          &kp DOT  &kp FSLH  &none
                      &kp TAB  &kp ESC  &lt 1 ENTER    &lt 2 BACKSPACE  &lt 4 SPACE  &lt 3 RIGHT_SHIFT
             >;
         };
