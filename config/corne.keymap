@@ -12,17 +12,24 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        to-sys {
+            bindings = <&mo 3>;
+            key-positions = <36 41>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-&none  &kp Q  &kp W  &kp F    &kp P    &kp B          &kp J            &kp L        &kp U              &kp Y    &kp SEMI  &none
-&none  &kp A  &kp R  &kp S    &kp T    &kp G          &kp M            &kp N        &kp E              &kp I    &kp O     &none
-&none  &kp X  &kp C  &kp D    &kp V    &kp Z          &kp K            &kp H        &kp COMMA          &kp DOT  &kp FSLH  &none
-                     &kp TAB  &kp ESC  &lt 1 ENTER    &lt 2 BACKSPACE  &lt 4 SPACE  &lt 3 RIGHT_SHIFT
+&none  &kp Q  &kp W  &kp F    &kp P         &kp B          &kp J            &kp L        &kp U            &kp Y    &kp SEMI  &none
+&none  &kp A  &kp R  &kp S    &kp T         &kp G          &kp M            &kp N        &kp E            &kp I    &kp O     &none
+&none  &kp X  &kp C  &kp D    &kp V         &kp Z          &kp K            &kp H        &kp COMMA        &kp DOT  &kp FSLH  &none
+                     &kp TAB  &lt 5 ESCAPE  &lt 1 ENTER    &lt 2 BACKSPACE  &lt 4 SPACE  &kp RIGHT_SHIFT
             >;
         };
 
@@ -39,7 +46,7 @@
             bindings = <
 &none  &kp N1      &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &none
 &none  &caps_word  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &none
-&none  &trans      &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &none
+&none  &kt CLCK    &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &none
                            &trans  &trans  &trans    &trans    &trans    &trans
             >;
         };
@@ -55,10 +62,19 @@
 
         nav {
             bindings = <
-&none  &trans     &trans     &trans    &trans         &trans    &trans    &kp P     &trans  &trans     &trans  &none
-&none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LG(MINUS)  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &none
-&none  &trans     &trans     &trans    &trans         &trans    &trans    &trans    &trans  &trans     &trans  &none
-                             &trans    &trans         &trans    &trans    &trans    &trans
+&none  &trans     &trans     &trans    &trans            &trans    &trans    &trans    &trans  &trans     &trans  &none
+&none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LEFT_COMMAND  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &none
+&none  &trans     &trans     &trans    &trans            &trans    &trans    &trans    &trans  &trans     &trans  &none
+                             &trans    &trans            &trans    &trans    &trans    &trans
+            >;
+        };
+
+        nav-2 {
+            bindings = <
+&none  &trans  &trans    &trans    &trans  &trans       &trans  &trans             &trans    &trans     &trans     &none
+&none  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT    &trans  &kp RIGHT_COMMAND  &kp RALT  &kp RCTRL  &kp RSHFT  &none
+&none  &trans  &trans    &trans    &trans  &trans       &trans  &trans             &trans    &trans     &trans     &none
+                         &trans    &trans  &trans       &trans  &trans             &trans
             >;
         };
     };
