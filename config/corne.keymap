@@ -15,12 +15,11 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_to_sys {
+        combo-to {
             bindings = <&mo 3>;
-            key-positions = <41 36>;
-            require-prior-idle-ms = <10>;
+            key-positions = <10 34>;
             timeout-ms = <90>;
-            slow-release;
+            require-prior-idle-ms = <1>;
         };
     };
 
@@ -29,10 +28,10 @@
 
         base {
             bindings = <
-&none  &kp Q  &kp W  &kp F    &kp P         &kp B          &kp J            &kp L        &kp U            &kp Y    &kp SEMI  &none
-&none  &kp A  &kp R  &kp S    &kp T         &kp G          &kp M            &kp N        &kp E            &kp I    &kp O     &none
-&none  &kp X  &kp C  &kp D    &kp V         &kp Z          &kp K            &kp H        &kp COMMA        &kp DOT  &kp FSLH  &none
-                     &kp TAB  &lt 5 ESCAPE  &lt 1 ENTER    &lt 2 BACKSPACE  &lt 4 SPACE  &kp RIGHT_SHIFT
+&none  &kp Q  &kp W  &kp F      &kp P         &kp B          &kp J            &kp L        &kp U            &kp Y    &kp SEMI  &none
+&none  &kp A  &kp R  &kp S      &kp T         &kp G          &kp M            &kp N        &kp E            &kp I    &kp O     &none
+&none  &kp X  &kp C  &kp D      &kp V         &kp Z          &kp K            &kp H        &kp COMMA        &kp DOT  &kp FSLH  &none
+                     &lt 3 TAB  &lt 5 ESCAPE  &lt 1 ENTER    &lt 2 BACKSPACE  &lt 4 SPACE  &kp RIGHT_SHIFT
             >;
         };
 
@@ -74,10 +73,10 @@
 
         nav-2 {
             bindings = <
-&none  &trans  &trans    &trans    &trans  &trans       &trans  &trans             &trans    &trans     &trans     &none
-&none  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT    &trans  &kp RIGHT_COMMAND  &kp RALT  &kp RCTRL  &kp RSHFT  &none
-&none  &trans  &trans    &trans    &trans  &trans       &trans  &trans             &trans    &trans     &trans     &none
-                         &trans    &trans  &trans       &trans  &trans             &trans
+&none  &trans  &trans    &trans  &trans    &trans       &trans  &trans             &trans    &trans     &trans     &none
+&none  &trans  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT    &trans  &kp RIGHT_COMMAND  &kp RALT  &kp RCTRL  &kp RSHFT  &none
+&none  &trans  &trans    &trans  &trans    &trans       &trans  &trans             &trans    &trans     &trans     &none
+                         &trans  &trans    &trans       &trans  &trans             &trans
             >;
         };
     };
