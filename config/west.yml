@@ -11,6 +11,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
+      revision: v3.0
       import: app/west.yml
     - name: nice-view-gem # Importing the custom widget module
       remote: m165437
