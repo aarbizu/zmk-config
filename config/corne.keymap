@@ -17,9 +17,9 @@
 
         combo_to_sys {
             bindings = <&mo 3>;
-            key-positions = <35 34>;
-            require-prior-idle-ms = <110>;
-            layers = <3>;
+            key-positions = <41 36>;
+            require-prior-idle-ms = <10>;
+            layers = <0>;
             timeout-ms = <90>;
         };
     };
